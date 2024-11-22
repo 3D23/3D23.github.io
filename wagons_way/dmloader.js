@@ -49,10 +49,6 @@ var CUSTOM_PARAMETERS = {
         var prevInnerWidth = -1;
         var prevInnerHeight = -1;
         
-        buttonHeight = 42;
-        
-        
-        buttonHeight = 42;
         
         // Hack for iOS when exit from Fullscreen mode
         if (is_iOS) {
@@ -75,20 +71,10 @@ var CUSTOM_PARAMETERS = {
         var actualRatio = innerWidth / innerHeight;
     
     
+        //Stretch
+        width = innerWidth;
+        height = innerHeight;
     
-        //Fit
-        if (actualRatio > targetRatio) {
-            width = innerHeight * targetRatio;
-            height = innerHeight;
-            app_container.style.marginLeft = ((innerWidth - width) / 2) + "px";
-            app_container.style.marginTop = "0px";
-        }
-        else {
-            width = innerWidth;
-            height = innerWidth / targetRatio;
-            app_container.style.marginLeft = "0px";
-            app_container.style.marginTop = ((innerHeight - height) / 2) + "px";
-        }
     
     
         var dpi = 1;

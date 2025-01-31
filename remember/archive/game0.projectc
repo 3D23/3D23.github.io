@@ -2,6 +2,7 @@
 title = RememberMe
 version = 1.0
 write_log = 0
+minimum_log_level = 1
 compress_archive = 1
 publisher = unnamed
 developer = unnamed
@@ -24,7 +25,7 @@ display_device_info = 0
 clear_color_red = 0.2039
 clear_color_green = 0.2862
 clear_color_blue = 0.3686
-clear_color_alpha = 0
+clear_color_alpha = 1
 
 [physics]
 type = 2D
@@ -61,6 +62,8 @@ max_font_batches = 128
 max_debug_vertices = 10000
 texture_profiles = /builtins/graphics/default.texture_profiles
 verify_graphics_calls = 1
+opengl_version_hint = 33
+opengl_core_profile_hint = true
 memory_size = 512
 
 [shader]
@@ -158,13 +161,14 @@ app_icon =
 custom_heap_size = 0
 heap_size = 256
 htmlfile = /builtins/manifests/web/engine_template.html
-cssfile = /builtins/manifests/web/light_theme.css
+cssfile = /builtins/manifests/web/dark_theme.css
+splash_image = /resources/images/logo.png
 archive_location_prefix = archive
 archive_location_suffix = 
 engine_arguments = --verify-graphics-calls=false
 wasm_streaming = 0
-show_fullscreen_button = 1
-show_made_with_defold = 1
+show_fullscreen_button = 0
+show_made_with_defold = 0
 show_console_banner = 1
 scale_mode = stretch
 
